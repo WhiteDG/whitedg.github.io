@@ -187,7 +187,6 @@ Alfred 最强大的功能就是 workflow，使用现有的 workflow 很简单，
 
 - [https://github.com/vitorgalvao/alfred-workflows](https://github.com/vitorgalvao/alfred-workflows)
 - [https://github.com/hzlzh/Alfred-Workflows](https://github.com/hzlzh/Alfred-Workflows)
-- [http://alfredworkflow.com/](http://alfredworkflow.com/)
 - [https://github.com/zenorocha/alfred-workflows](https://github.com/zenorocha/alfred-workflows)
 - [https://www.alfredapp.com/workflows/](https://www.alfredapp.com/workflows/)
 
@@ -199,6 +198,6 @@ Alfred 最强大的功能就是 workflow，使用现有的 workflow 很简单，
 
 # Windows？
 
-推荐 [Wox](http://www.wox.one/) ，完全开源免费。基本功能相似，在 Wox 中 [Plugin](http://www.wox.one/plugin) 就相当于 Alfred 中的 Workflow
+推荐 [Wox](https://github.com/Wox-launcher/Wox) ，完全开源免费。基本功能相似，在 Wox 中 [Plugin](https://github.com/Wox-launcher/Wox/wiki/Getting-started.-Plugins) 就相当于 Alfred 中的 Workflow
 
 > Launcher for Windows, an alternative to Alfred and Launchy. 

@@ -34,7 +34,7 @@ tags: Nginx Tomcat
 
 2. 下载 Ngnix
 
-    从 [Ngnix 官网](http://nginx.org/en/download.html)下载最新稳定版，目前是 [1.12.2](http://nginx.org/download/nginx-1.12.2.tar.gz)
+    从 [Ngnix 官网](https://nginx.org/en/download.html)下载最新稳定版
     ``` bash  
     # 如果还未安装 wget 请先执行安装命令
     yum install -y wget
@@ -94,9 +94,9 @@ tags: Nginx Tomcat
     working. Further configuration is required.</p>
 
     <p>For online documentation and support please refer to
-    <a href="http://nginx.org/">nginx.org</a>.<br/>
+    <a href="https://nginx.org/">nginx.org</a>.<br/>
     Commercial support is available at
-    <a href="http://nginx.com/">nginx.com</a>.</p>
+    <a href="https://nginx.com/">nginx.com</a>.</p>
 
     <p><em>Thank you for using nginx.</em></p>
     </body>
@@ -110,7 +110,7 @@ Tomcat 单实例部署，即一个 Tomcat 服务器运行时，不存在负载�
 1. 安装 JDK（如果本机已经安装了则跳过第一步）
 ``` bash  
 # 下载、解压 JDK8，下载地址可以从官网获取
-wget http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.tar.gz?AuthParam=1520068673_6f545cf32470b83658219011266e65b8
+wget https://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.tar.gz?AuthParam=1520068673_6f545cf32470b83658219011266e65b8
 # 配置 Java 环境变量
 vi /etc/profile
 # 在文件尾部添加以下内容
@@ -128,7 +128,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
 2. 下载 Tomcat
 ``` bash  
 # 下载 Tomcat 9
-wget http://mirrors.hust.edu.cn/apache/tomcat/tomcat-9/v9.0.5/bin/apache-tomcat-9.0.5.tar.gz
+wget https://mirrors.hust.edu.cn/apache/tomcat/tomcat-9/v9.0.5/bin/apache-tomcat-9.0.5.tar.gz
 # 解压
 tar -zxvf apache-tomcat-9.0.5.tar.gz
 # 为接下来的步骤做准备
