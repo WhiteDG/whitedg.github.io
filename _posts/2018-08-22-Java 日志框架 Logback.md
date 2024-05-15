@@ -1,9 +1,8 @@
 ---
 title: Java 日志框架 Logback
 description: 
-categories:
- - Java
-tags: Java Logback
+categories: [Java]
+tags: [logback]
 ---
 
 ## Logback 简介

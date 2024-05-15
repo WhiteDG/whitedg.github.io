@@ -1,9 +1,7 @@
 ---
 title: Mac 效率神器 Alfred
-description: 
-categories:
- - App
-tags: Mac
+categories: [软件]
+tags: [Mac]
 ---
 
 

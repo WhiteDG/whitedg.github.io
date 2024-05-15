@@ -1,10 +1,8 @@
 ---
 
 title: Spring Boot Actuator
-description: 
-categories:
- - SpringBoot
-tags: Actuator
+categories: [Java]
+tags: [SpringBoot, Actuator, 监控]
 ---
 
 ## 简介

@@ -1,9 +1,7 @@
 ---
 title: SpringCloud 笔记-熔断器 Hystrix
-description: 
-categories:
- - SpringCloud
-tags: Hystrix
+categories: [Java]
+tags: [SpringCloud, Hystrix]
 ---
 
 在微服务架构中，一般每个服务都会做集群部署，一是可以做负载均衡，二是需要保证服务的高可用。但是由于网络或服务器或服务自身等原因，都有可能导致某一个服务出现问题，如果某个服务出现响应缓慢的情况，调用这个服务就会出现线程阻塞，此时若有大量的请求涌入，Servlet 容器的线程资源会被消耗完毕，导致服务瘫痪。由于服务与服务之间的依赖性，故障会传播，会对整个微服务系统造成灾难性的严重后果，这就是服务故障的“雪崩”效应。

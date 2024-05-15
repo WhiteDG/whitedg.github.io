@@ -1,9 +1,7 @@
 ---
 title: SpringCloud 笔记-负载均衡客户端Ribbon
-description: 
-categories:
- - SpringCloud
-tags: Ribbon
+categories: [Java]
+tags: [SpringCloud, Ribbon, 负载均衡]
 ---
 
 Ribbon 是一个基于 HTTP 和 TCP 的负载均衡客户端，Ribbon 默认提供了很多负载均衡算法，例如轮询、随机等。当然，开发者也可为 Ribbon 实现自定义的负载均衡算法。上一篇笔记中提到的 Feign 已经默认使用了 Ribbon。SpringCloud 远程调用还有另一种方式——RestTemplate，这次使用 RestTemplate 作为 Web 客户端。

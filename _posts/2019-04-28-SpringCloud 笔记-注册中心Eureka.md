@@ -1,9 +1,8 @@
 ---
 title: SpringCloud 笔记-注册中心 Eureka
 description: 
-categories:
- - SpringCloud
-tags: Eureka
+categories: [Java]
+tags: [SpringCloud, Eureka]
 ---
 
 Eureka 是 Netflix 开发的服务发现框架，本身是一个基于 REST 的服务，主要用于定位运行在 AWS 域中的中间层服务，以达到负载均衡和中间层服务故障转移的目的。SpringCloud 将它集成在其子项目 spring-cloud-netflix 中，以实现 SpringCloud 的服务发现功能。    

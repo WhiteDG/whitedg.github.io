@@ -1,9 +1,8 @@
 ---
 title: SpringCloud 笔记-服务提供者与消费者
 description: 
-categories:
- - SpringCloud
-tags: 
+categories: [Java]
+tags: [SpringCloud]
 ---
 
 服务提供者和消费者是微服务架构中两个重要的角色，服务提供者生产服务并注册到服务中心中，消费者从服务中心中获取服务并执行。

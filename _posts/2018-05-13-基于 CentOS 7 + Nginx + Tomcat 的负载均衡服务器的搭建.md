@@ -1,9 +1,8 @@
 ---
 title: 基于 CentOS 7 + Nginx + Tomcat 的负载均衡服务器的搭建
 description:
-categories:
- - 服务器
-tags: Nginx Tomcat
+categories: [教程]
+tags: [Nginx, Tomcat, 负载均衡]
 ---
 
 ## 前言
