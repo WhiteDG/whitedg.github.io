@@ -20,7 +20,7 @@ tags: [SpringCloud]
     ```
 3. 配置文件
 
-    ```json
+    ```properties
     spring.application.name=spring-cloud-producer
     server.port=9000
     # 注册中心地址
@@ -71,7 +71,7 @@ Feign 是一个声明式 Web Service 客户端。它的使用方法是定义一�
 
 3. 配置文件
 
-    ```json
+    ```properties
     spring.application.name=spring-cloud-consumer
     server.port=9001
     eureka.client.serviceUrl.defaultZone=http://localhost:8000/eureka/
@@ -123,6 +123,6 @@ Feign 是一个声明式 Web Service 客户端。它的使用方法是定义一�
 
     - 依次启动 [注册中心](https://whitedg.github.io/springcloud/2019/04/28/SpringCloud-%E7%AC%94%E8%AE%B0-%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83Eureka/#){:target="_blank"}。、服务提供者、服务消费者
     - 访问 http://127.0.0.1:9000/test?name=White 测试提供者的服务是否可用
-    ![produces_enable](/assets/post_imgs/produces_enable.jpg)
+    ![produces_enable](/assets/post_imgs/produces_enable.webp)
     - 访问 http://127.0.0.1:9001/test?name=White 测试消费者远程调用是否成功
-    ![fegin_test](/assets/post_imgs/fegin_test.jpg)
+    ![fegin_test](/assets/post_imgs/fegin_test.webp)

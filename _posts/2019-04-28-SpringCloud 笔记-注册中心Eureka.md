@@ -13,7 +13,7 @@ Eureka包含两个组件：Eureka Server 和 Eureka Client。
 
 注册中心是用来统一管理各个微服务功能的，提供了包括服务的注册、发现、熔断、负载、降级等功能。所有服务之间的相互调用都要通过注册中心来调用。
 
-![服务调用](/assets/post_imgs/service_invoke.jpg)
+![服务调用](/assets/post_imgs/service_invoke.webp)
 
 上图正常的业务流程是需要 服务 A 调用服务 B，服务 B 调用服务 C，有了注册中心之后，调用的步骤就会为变成：服务 A 首先从注册中心请求服务 B 服务器，然后服务 B 再从注册中心请求 服务 C。
 
@@ -55,7 +55,7 @@ public class EurekaServerApplication {
 
 3. 修改注册中心相关配置
 
-```json
+```properties
 spring.application.name=spring-cloud-eureka
 server.port=8000
 ## 表示是否将自己注册到Eureka Server，默认为true。
@@ -68,14 +68,14 @@ eureka.client.serviceUrl.defaultZone=http://localhost:${server.port}/eureka/
 
 4. 启动项目，访问 http://localhost:8000/
 
-![注册中心后台](/assets/post_imgs/eureka_server.jpg)
+![注册中心后台](/assets/post_imgs/eureka_server.webp)
 
 ### 注册中心集群
 注册中心在微服务中扮演的角色十分重要，如果只有一个注册中心，要是注册中心挂了那么就相当于切断了所有服务之间的联系，几乎就是相当于整个系统挂了，所以保证注册中心的高可用是非常重要的。集群便是保证其高可用的解决方案，Eureka 可以通过互相注册的方式来实现高可用的部署，所以只需要将 Eureke Server 配置其他可用的 serviceUrl.defaultZone 就能实现高可用部署。
 
 1. 新建两个配置文件 application-peer1.properties、application-peer2.properties，配置内容如下：
 
-```json
+```properties
 spring.application.name=spring-cloud-eureka
 server.port=8000
 eureka.instance.hostname=peer1
@@ -83,7 +83,7 @@ eureka.instance.hostname=peer1
 eureka.client.serviceUrl.defaultZone=http://peer2:8001/eureka/
 ```
 
-```json
+```properties
 spring.application.name=spring-cloud-eureka
 server.port=8001
 eureka.instance.hostname=peer2
@@ -113,12 +113,12 @@ java -jar eureka-server-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer2
 分别访问  http://pee1:8000/  http://pee2:8001/   
 
 ``` http://pee1:8000/ ```
-![peer1_8000](/assets/post_imgs/peer1_8000.jpg)
+![peer1_8000](/assets/post_imgs/peer1_8000.webp)
 
 ``` http://pee2:8001/ ```
-![peer2_8001](/assets/post_imgs/peer2_8001.jpg)
+![peer2_8001](/assets/post_imgs/peer2_8001.webp)
 
 如上图所示，peer 1的 DS Replicas 已经有了 peer2 的相关配置信息，并且出现在 available-replicas 中。如果手动停止 peer2，那么 peer2 就会移动到 unavailable-replicas 一栏中，表示 peer2 不可用。
 
-![peer2_unavailable](/assets/post_imgs/peer2_unavailable.jpg)
+![peer2_unavailable](/assets/post_imgs/peer2_unavailable.webp)
 

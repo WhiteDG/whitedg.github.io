@@ -91,9 +91,9 @@ Ribbon 是一个基于 HTTP 和 TCP 的负载均衡客户端，Ribbon 默认提�
 ## 测试
 
 1. 分别启动 注册中心、服务提供者(9000/9003)、服务消费者(spring-cloud-ribbon)
-![ribbon_produces](/assets/post_imgs/ribbon_produces.jpg)
+![ribbon_produces](/assets/post_imgs/ribbon_produces.webp)
 2. 多次访问 http://127.0.0.1:10000/ribbon?name=White 测试负载均衡是否生效
-![9000_resp](/assets/post_imgs/9000_resp.jpg)
-![9003_resp](/assets/post_imgs/9003_resp.jpg)
+![9000_resp](/assets/post_imgs/9000_resp.webp)
+![9003_resp](/assets/post_imgs/9003_resp.webp)
 
     多次访问分别调用了不同的服务实例，说明负载均衡生效了。

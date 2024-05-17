@@ -55,11 +55,11 @@ SpringCloud 中整合了 Hystrix 组件，实现了熔断器模式。Hystrix 有
 
 4. 测试
     1. 分别启动 注册中心、服务提供者、服务消费者
-    ![hystrix](/assets/post_imgs/hystrix.jpg)
+    ![hystrix](/assets/post_imgs/hystrix.webp)
     2. 访问 http://127.0.0.1:9001/test?name=White 
-    ![9001_success](/assets/post_imgs/9001_success.jpg)
+    ![9001_success](/assets/post_imgs/9001_success.webp)
     3. 停掉服务提供者，再次访问
-    ![9001_hystrix](/assets/post_imgs/9001_hystrix.jpg)
+    ![9001_hystrix](/assets/post_imgs/9001_hystrix.webp)
 
         如上图所示，说明熔断器已经成功运行。
 
